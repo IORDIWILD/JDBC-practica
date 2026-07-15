@@ -6,7 +6,10 @@ import java.util.Optional;
 
 public class ProductoDAO {
 
-public ArrayList<Producto>listProductos(){
+    public ProductoDAO() {
+    }
+
+    public ArrayList<Producto>listProductos(){
     ArrayList<Producto> productos = new ArrayList<>();
     String sql ="SELECT * FROM producto;";
     try(    Connection conn = ConexionDB.getConexionDB();
