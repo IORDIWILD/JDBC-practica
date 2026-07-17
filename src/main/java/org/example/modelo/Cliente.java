@@ -1,18 +1,18 @@
-package org.example;
+package org.example.modelo;
 
 public class Cliente {
     private int id_cliente;
     private String nombre;
     private String email;
     private String ciudad;
-    private String fechaRegistro;
+    private String fecha_registro;
     private String telefono;
 
     public Cliente(String nombre, String email, String ciudad, String fechaRegistro, String telefono) {
         this.nombre = nombre;
         this.email = email;
         this.ciudad = ciudad;
-        this.fechaRegistro = fechaRegistro;
+        this.fecha_registro = fechaRegistro;
         this.telefono = telefono;
     }
 
@@ -21,7 +21,7 @@ public class Cliente {
         this.nombre = nombre;
         this.email = email;
         this.ciudad = ciudad;
-        this.fechaRegistro = fechaRegistro;
+        this.fecha_registro = fechaRegistro;
         this.telefono = telefono;
     }
 
@@ -58,11 +58,11 @@ public class Cliente {
     }
 
     public String getFechaRegistro() {
-        return fechaRegistro;
+        return fecha_registro;
     }
 
     public void setFechaRegistro(String fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
+        this.fecha_registro = fechaRegistro;
     }
 
     public String getTelefono() {
@@ -76,6 +76,6 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente{id=" + id_cliente + ", nombre='" + nombre + "', email=" + email
-                + ", ciudad=" + ciudad +"}" + ", fecha de registro=" + fechaRegistro +", telefono="+telefono+"}";
+                + ", ciudad=" + ciudad +"}" + ", fecha de registro=" + fecha_registro +", telefono="+telefono+"}";
     }
 }
