@@ -7,11 +7,12 @@ import java.util.Optional;
 
 import org.example.gestor.EmpleadoManager;
 import org.example.gestor.ProductoManager;
+import org.example.modelo.Cliente;
 import org.example.modelo.Producto;
-
+import org.example.gestor.ClienteManager;
 public class Main {
     public static void main(String[] args) {
-        EmpleadoManager empleadoManager = new EmpleadoManager();
-        empleadoManager.iniciarEmpleadoManager();
+        ClienteManager clienteManager = new ClienteManager();
+        clienteManager.iniciarClienteManager();
     }
 }
